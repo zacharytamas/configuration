@@ -1,2 +1,3 @@
-.config/fish/functions/__use_opendoor.fish
-/.config/fish/functions/fisher.fish
+.config/fish/conf.d/_*.fish
+.config/fish/functions/_*.fish
+.config/fish/functions/fisher.fish
