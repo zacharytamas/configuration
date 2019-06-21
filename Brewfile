@@ -13,12 +13,10 @@ brew "hub"
 brew "watchman"
 brew "wget"
 brew "yarn"
-brew "zsh-autosuggestions"
 
 cask "font-meslo-nerd-font"
 cask "font-meslo-nerd-font-mono"
 cask "react-native-debugger"
-cask "tunnelblick"
 cask "visual-studio-code"
 
 mas "Bear", id: 1091189122
