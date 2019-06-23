@@ -6,6 +6,7 @@ end
 
 set -x PATH $HOME/bin /usr/local/bin $PATH
 set -x EDITOR "vim"
+set -x pure_symbol_prompt "⚡️"
 
 set HERE (dirname (status --current-filename))
 
@@ -16,6 +17,8 @@ end
 # Load [asdf](https://asdf-vm.com/) for automatic environments
 test -f ~/.asdf/asdf.fish; and source ~/.asdf/asdf.fish
 
+# If on Linux with `snap`, add it to the PATH.
+test -d /snap/bin; and set -x PATH /snap/bin $PATH
 
 if test (hostname) = "zachary-jones-od-mac"
   direnv hook fish | source
