@@ -19,9 +19,3 @@ test -f ~/.asdf/asdf.fish; and source ~/.asdf/asdf.fish
 
 # If on Linux with `snap`, add it to the PATH.
 test -d /snap/bin; and set -x PATH /snap/bin $PATH
-
-if test (hostname) = "zachary-jones-od-mac"
-  direnv hook fish | source
-  __use_opendoor
-end
-
