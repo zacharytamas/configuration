@@ -6,9 +6,20 @@ end
 
 set -x PATH $HOME/bin /usr/local/bin $PATH
 set -x EDITOR "vim"
-set -x pure_symbol_prompt "⚡️"
 
 set HERE (dirname (status --current-filename))
+
+# Completions
+function make_completion --argument-names alias command
+    echo "
+    function __alias_completion_$alias
+        set -l cmd (commandline -o)
+        set -e cmd[1]
+        complete -C\"$command \$cmd\"
+    end
+    " | source
+    complete -c $alias -a "(__alias_completion_$alias)"
+end
 
 for file in $HERE/preferences/*.fish
   source $file
