@@ -32,9 +32,13 @@ end
 # VS Code
 ################################################################################
 
-if test -x (which code)
-  function code
-    if test (count $argv) -eq 0; command code .
-    else; command code $argv; end
-  end
+if test -x (which code-insiders)
+  set CODE_BINARY 'code-insiders'
+else if test -x (which code)
+  set CODE_BINARY 'code'
+end
+
+function code
+  if test (count $argv) -eq 0; command $CODE_BINARY .
+  else; command $CODE_BINARY $argv; end
 end
