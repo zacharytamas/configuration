@@ -5,7 +5,8 @@ if not functions -q fisher
 end
 
 set -x PATH $HOME/bin /usr/local/bin $PATH
-set -x EDITOR "vim"
+set -x EDITOR "nvim"
+set -x FZF_DEFAULT_COMMAND "rg --files"
 
 set HERE (dirname (status --current-filename))
 
