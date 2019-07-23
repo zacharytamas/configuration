@@ -44,3 +44,5 @@ function fvim
     fzf -m | xargs vim
   end
 end
+
+make_completion fvim 'nvim'
