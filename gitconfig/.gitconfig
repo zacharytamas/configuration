@@ -1,0 +1,64 @@
+[user]
+  name = Zachary Jones
+  email = zachary@jones.cx
+
+[core]
+  excludesfile = ~/.config/shared/gitconfig/gitignore_global
+  pager = diff-so-fancy | less --tabs=4 -RFX
+
+[fetch]
+  prune = true
+
+[merge]
+  tool = smerge
+
+[diff]
+  algorithm = patience
+
+[color]
+  ui = auto
+[color "diff"]
+	meta = yellow bold
+  commit = green bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+  whitespace = red reverse
+  newMoved = cyan
+  oldMoved = blue
+[color "diff-highlight"]
+  oldNormal = red bold
+  oldHighlight = "red bold 52"
+  newNormal = "green bold"
+  newHighlight = "green bold 22"
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
+
+[url "https://github.com/"]
+  insteadOf = gh:
+
+# Opendoor ####################################################################
+
+[includeIf "gitdir:opendoor-labs/"]
+  path = "~/.config/shared/gitconfig/gitconfig-opendoor"
+[url "https://github.com/opendoor-labs/"]
+  insteadOf = od:
+
+# Thorough ####################################################################
+
+[url "https://github.com/thorough-dev/"]
+  insteadOf = thor:
+[includeIf "gitdir:thorough-dev/"]
+  path = "~/.config/shared/gitconfig/thorough"
+
+
+# Aliases #####################################################################
+
+[alias]
+  co = commit
