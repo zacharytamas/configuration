@@ -1,0 +1,16 @@
+{
+  "name": "yabai",
+  "version": "0.1.0",
+  "description": "",
+  "main": "moveActivatedWindow.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Zachary Jones <zachary@thorough.company>",
+  "license": "MIT",
+  "dependencies": {
+    "execa": "^2.0.3"
+  },
+  "devDependencies": {}
+}
