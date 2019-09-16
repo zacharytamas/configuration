@@ -3,7 +3,7 @@
 ################################################################################
 
 # Shortcut for opening my Fish config in VS Code.
-alias fishconfig="code ~/.config/fish"
+alias fishconfig="vim ~/.config/fish"
 
 ################################################################################
 # Vim
