@@ -3,3 +3,5 @@
 .config/fish/functions/_*.fish
 .config/fish/preferences/_*.fish
 .config/nvim/pack
+.config/nvim/autoload
+.config/nvim/plugged
