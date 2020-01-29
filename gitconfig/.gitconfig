@@ -13,7 +13,7 @@
   tool = smerge
 
 [diff]
-  algorithm = patience
+	algorithm = histogram
 
 [color]
   ui = auto
