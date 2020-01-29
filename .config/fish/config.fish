@@ -28,6 +28,9 @@ end
 
 # Load [asdf](https://asdf-vm.com/) for automatic environments
 test -f ~/.asdf/asdf.fish; and source ~/.asdf/asdf.fish
+test -f /usr/local/opt/asdf/asdf.fish; and source /usr/local/opt/asdf/asdf.fish
 
 # If on Linux with `snap`, add it to the PATH.
 test -d /snap/bin; and set -x PATH /snap/bin $PATH
+
+direnv hook fish | source
