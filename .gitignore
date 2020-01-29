@@ -5,3 +5,4 @@
 .config/nvim/pack
 .config/nvim/autoload
 .config/nvim/plugged
+.DS_Store
