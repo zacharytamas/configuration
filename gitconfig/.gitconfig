@@ -61,4 +61,7 @@
 # Aliases #####################################################################
 
 [alias]
-  co = commit
+  co = checkout
+  ci = commit
+  fixup = commit --fixup
+
